@@ -1,1 +1,2 @@
 # Learning-Management-System
+A Learning Management System (LMS) is a digital platform designed to create, deliver, manage, and track educational courses or training programs. It enables organizations, schools, and businesses to provide structured learning experiences, assess progress, and facilitate communication between learners and instructors. LMS platforms often include features like course management,study material,online lectures etc. 
