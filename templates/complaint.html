@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'studentlayout.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block student %}
+    <h1 class="text-center fw-bold mt-4" style="color:darkred">COMPLAINT FORM</h1>
+    {% for i in S %}
+    <form action="{% url 'Complaintsave' i.id %}" method="post">
+        {% csrf_token %}
+        {% endfor %}
+        {% for i in messages %}
+        <div class="alert alert-success" role="alert">
+            {{i}}
+          </div>
+        {% endfor %}
+        <div class="row border p-4 mt-4 shadow" style="background-color: aliceblue  ; height:100%; background-repeat: no-repeat; background-size: cover; margin-left: 50px; margin-right: 50px; border-radius:20px;">
+           <div class="col-md-12 text-center mx-auto">
+            <h3 style="color: black;">Subject:</h3>
+            <input type="text" name="Subject" class="form-control" placeholder="Enter Subject" style="border:2px solid black">
+           </div>
+           <div class="col-md-12 mt-3 text-center">
+            <h3 style="color:black;">Register Your Complain Here:</h3>
+            <Textarea style="height: 100px; width:100%; border-radius: 15px;" name="comp" class="border" placeholder="Write Your Complain Here"></Textarea>
+           </div>
+           <div class="col-md-12 mt-3">
+            <button class="btn  w-100" style="background-color: darkred; color:white;">Submit Complain</button>
+           </div>
+        </div>
+    </form>
+
+    {% endblock %}
+</body>
+</html>
