@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% extends 'adminlogin.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block mainadmin %}
+    <div class="row">
+        <div class="col-md-4 mt-4" ></div>
+        <div class="col-md-4 text-center">
+            <p class="fw-bold" style="color: darkred; font-size: 40px;">Complaints</p>
+        </div>
+        <div class="col-md-4 mt-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered shadow">
+                <tr class="table-dark text-center">
+                    <th style="background:darkred;color:white">Serial Number</th>
+                    <th style="background:darkred;color:white">Name</th>
+                    <th style="background:darkred;color:white">Course</th>
+                    <th style="background:darkred;color:white">Branch</th>
+                    <th style="background:darkred;color:white">Contact Number</th>
+                    <th style="background:darkred;color:white">Email</th>
+                    <th style="background:darkred;color:white">Subject</th>
+                    <th style="background:darkred;color:white">Complain</th>
+                    <th style="background:darkred;color:white">Date</th>
+                 
+                </tr>
+                {% for i in com %}
+                <tr class="text-center">
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.program}}</td>
+                    <td>{{i.branch}}</td>
+                    <td>{{i.contactno}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.Subject}}</td>
+                    <td>{{i.comp}}</td>
+                    <td>{{i.reqdate}}</td>
+               
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>   
+    {% endblock %}
+</body>
+</html>
