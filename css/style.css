@@ -1,0 +1,32 @@
+.card_outer {
+    min-height: 320px;
+    position: relative;
+    text-align: center;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .05), inset -5px -5px 5px rgba(255, 255, 255, .5), 5px 5px 5px rgba(0, 0, 0, .05), -5px -5px 5px rgba(255, 255, 255, .5);
+    border-radius: 15px;
+}
+
+.card_outer .card_box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #fafafa;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_outer .card_box .card_content {
+    padding: 20px;
+}
+
+.card_box:hover{
+    transform: translateY(-50px);
+    transition: 0.5s;
+}
+
