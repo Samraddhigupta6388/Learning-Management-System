@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends 'layout.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block main %}
+    <div class="row">
+        <div class="col-sm-12" style="background:linear-gradient(90deg,rgb(146, 1, 1), rgb(172, 0, 0),#ffd700); " >
+          <div class="col-sm-10 mx-auto p-5 my-5 shadow" style="background-color: white; border-radius: 50px;" >
+            <h4 class="fw-bold text-muted" style="font-size: 30px;">Features
+              <div style="height:4px; width: 165px;background:linear-gradient(90deg,rgb(146, 1, 1), rgb(172, 0, 0),gold); margin-top: -19px; margin-left:156px;"></div></h4>
+              <span style="font-family:'Franklin Gothic Medium'; font-size: 39px; margin-top:-50px;" class="fw-bold">Student
+                &nbsp;<span style="color: darkred; font-weight: bolder; font-size:39px;">SERVICES</span></span>
+                <div class="col-sm-10 d-flex mt-4">
+                  <div class="col-sm-5">
+                    <img src="{% static 'img/graph.jpeg' %}" alt="" class="my-5 mx-auto p-3" style="height: 500px; width:500px; border-radius: 20%;">
+                  </div>
+                  <div class="col-sm-5"  style="margin-left: 200px;">
+                    <a href="" style="text-decoration: none; color: darkred; font-size: 18px;" ><img src="{% static 'img/login.jpeg' %}" alt="" class="w-25" style="padding: 10px;">Login</a><br>
+                    <a href="" style="text-decoration: none; color: darkred; font-size: 18px;" ><img src="{% static 'img/Dashboard .jpeg' %}" alt="" class="w-25" style="padding: 10px;">Dashborad</a><br>
+                    <a href="" style="text-decoration: none; color: darkred; font-size: 18px;" ><img src="{% static 'img/m.jpg' %}" alt="" class="w-25" style="padding: 10px;">Self Learning Material (SLM)</a><br>
+                    <a href="" style="text-decoration: none; color: darkred; font-size: 18px;" ><img src="{% static 'img/ebook.jpeg' %}" alt="" class="w-25" style="padding: 10px;">e-Books</a> <br>
+                    <a href="" style="text-decoration: none; color: darkred; font-size: 18px;" ><img src="{% static 'img/assessment.jpeg' %}" alt="" class="w-25" style="padding: 10px;">Self-Assessment Tools</a><br>
+                    <a href="" style="text-decoration: none; color: darkred; font-size: 18px;" ><img src="{% static 'img/perfomance.jpeg' %}" alt="" class="w-25" style="padding: 10px;">Performance</a><br>
+                    <a href="" style="text-decoration: none; color: darkred; font-size: 18px;" ><img src="{% static 'img/feedback.jpeg' %}" alt="" class="w-25" style="padding: 10px;">Feedback</a><br>
+                    <a href="" style="text-decoration: none; color: darkred; font-size: 18px;" ><img src="{% static 'img/course-catlog.jpg' %}" alt="" class="w-25" style="padding: 10px;">Courses-Catalogue</a><br>
+                 </div>
+                 
+                </div> 
+                
+                </div>
+      </div>
+      </div>
+      {% endblock %}
+</body>
+</html>

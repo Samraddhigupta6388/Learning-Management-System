@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% extends 'studentlayout.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block student %}
+    <!-- This is main -->
+    
+
+     <div class="row m-4" style="background-color: lightgrey;">    
+        <form action="{% url 'upsave' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row m-5 border p-3 shadow" style="background-color: white;">
+                <div class="col-md-6">
+                    <h6>Enter your Enrollment Number <span style="color: red;">*</span></h6>
+                    <input type="text" name="enrollment" value="{{ue.enrollment}}" readonly class="form-control rounded-0 border-dark" placeholder="Enrollment Number" required>
+                </div>
+                <div class="col-md-6">
+                    <h6>Enter your Name <span style="color: red;">*</span></h6>
+                    <input type="text" name="name" value="{{ue.name}}" class="form-control rounded-0 border-dark" placeholder="Name" required>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Father's Name <span style="color: red;">*</span></h6>
+                    <input type="text" name="fname" value="{{ue.fname}}" class="form-control rounded-0 border-dark" placeholder="Father Name" required>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Mother's Name <span style="color: red;">*</span></h6>
+                    <input type="text" name="mname" value="{{ue.mname}}" class="form-control rounded-0 border-dark" placeholder="Mother Name" required>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <h6>Enter your Gender <span style="color: red;">*</span></h6>
+                    <input type="radio" name="gender" value="Male">&nbsp;Male
+                    <input type="radio" name="gender" value="Female">&nbsp;Female
+                    <input type="radio" name="gender" value="Others">&nbsp;Others
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Address <span style="color: red;">*</span></h6>
+                    <textarea type="text" name="address" class="form-control rounded-0 border-dark" placeholder="Address" required>
+                        {{ue.address}}
+                    </textarea>    
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Course <span style="color: red;">*</span></h6>
+                    <input type="text" name="course" value="{{ue.course}}" class="form-control rounded-0 border-dark" placeholder="Course" required>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Branch <span style="color: red;">*</span></h6>
+                    <input type="text" name="branch" value="{{ue.branch}}" class="form-control rounded-0 border-dark" placeholder="Branch" required>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Year <span style="color: red;">*</span></h6>
+                    <input type="number" name="year" value="{{ue.year}}" class="form-control rounded-0 border-dark" placeholder="Year" required>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Contact Number <span style="color: red;">*</span></h6>
+                    <input type="number" name="mobile" value="{{ue.mobile}}" class="form-control rounded-0 border-dark" placeholder="Contact Number" required>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Email <span style="color: red;">*</span></h6>
+                    <input type="email" name="email" value="{{ue.email}}" readonly class="form-control rounded-0 border-dark" placeholder="Email" required>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h6>Enter your Password <span style="color: red;">*</span></h6>
+                    <input type="password" name="password" value="{{ue.password}}" readonly class="form-control rounded-0 border-dark" placeholder="Password" required>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <h6>Enter your Files <span style="color: red;">*</span></h6>
+                    <input type="file" name="New_file" class="form-control rounded-0 border-dark" placeholder="Password" >
+                </div>
+                <div class="col-md-12 mt-4">
+                    <input type="submit" class="btn w-100 shadow" style="font-size: 20px; background-color: darkred; color: white; border-radius:15px;">
+                </div>
+            </div>
+        </form>
+     </div>
+
+
+
+     
+    {% endblock %}
+</body>
+</html>

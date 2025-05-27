@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% extends 'layout.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Courses {% endblock %}</title>
+</head>
+<body>
+    {% block main %}
+    <div class="row">
+        <div class="col-md-12" style="background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.568)) ,url(../static/img/pic2.jpeg); height: 350px; background-repeat: no-repeat; background-size: cover;">
+            <h1 style="color: white; text-align: center; margin-top: 80px; font-size: 60px; ">COURSES</h1>
+        </div>
+    </div>
+    <!-- Course starts -->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-1 mt-4 fw-bold"><span style="color: grey; font-size: 20px;"></span></div>
+        <div class="col-md-10 fw-bold"><hr style="margin-top:38px; margin-right: 1000px; color:rgb(248, 151, 116);"></div>
+    </div> 
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11"><span class="fw-bold" style="color: black; font-size: 25px;">OUR</span>&nbsp<span class="fw-bold" style="color: darkred; font-size: 25px">COURSES</span></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button class="fw-bold" style="background-color: orangered; border: 0px; color: white; height: 40px; width:250px; border-radius: 10px; font-size: 25px;">All Courses</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/course1.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2">MASTER IN COMPUTER APPLICATION</h6>
+                    <h6 class="fw-bold">(M.C.A)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>2 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/course2.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2">PG DIPLOMA IN FINANCIAL MANAGEMENT</h6>
+                    <h6 class="fw-bold">(P.G.D.F.M)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/course3.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2">BACHLORE IN BUSINESS ADMINISTRATION</h6>
+                    <h6 class="fw-bold">(B.B.A)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/course4.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2">BACHELOR IN COMPUTER APPLICATION</h6>
+                    <h6 class="fw-bold">(B.C.A)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/course4.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2">BACHELOR IN COMPUTER APPLICATION</h6>
+                    <h6 class="fw-bold">(B.C.A)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/course5.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2">BACHELOR OF ARTS (GEOGRAPHY)</h6>
+                    <h6 class="fw-bold">(B.A)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/mlis.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2 text-center">MASTER IN LIBRARY AND INFORMATION SCIENCE</h6>
+                    <h6 class="fw-bold">(M.L.I.S)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>2 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/msc(physics) (1).png ' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2">MASTER OF SCIENCE (PHYSICS)</h6>
+                    <h6 class="fw-bold">(M.Sc)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    
+                    <img src="{% static 'img/pgdys.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2 text-center">POST GRADUATION DIPLOMA(YOGIC STUDENT)</h6>
+                    <h6 class="fw-bold">(P.G.D.Y.S)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/pgdhet.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2">POST GRADUATION DIPLOMA</h6>
+                    <h6 class="fw-bold">(P.G.D.H.E.T)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/cbl.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2 ">CERTIFICATE IN BHOJPURI LANGUAGE</h6>
+                    <h6 class="fw-bold">(C.B.L)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>3 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card align-items-center" style="box-shadow: 5px 5px 10px black;">
+                    <img src="{% static 'img/cbmanc.png' %}" class="w-75 mt-3">
+                    <h6 class="fw-bold mt-2 text-center">CERTIFICATE IN BASIC MEDICAL ASSESSMENT AND NURSING CARE</h6>
+                    <h6 class="fw-bold">(C.B.M.A.N.C)</h6>
+                    <p class="mt-2"><span style="color: orange;">Duration: </span>2 years</p>
+                    <i class="fa-solid fa-star mt-3 mb-3" style="color: #FFD43B;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Course ends -->
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% extends 'adminlogin.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block mainadmin %}
+    <div class="row mt-2">
+        <div class="col-md-8 mx-auto p-3 shadow text-center" style="background-color: white; border-radius: 10px;">
+            <h4 style="color:darkred;">Welcome To Admin Panel </h4>
+        </div>
+    </div>
+    <div class="row mt-4 m-4">
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <i class="fa-solid fa-users-rectangle mt-4" style="color: #6b0b0f; font-size: 45px;"></i>
+                <h2 class="mt-3 fs-5">No. Of Students</h2>
+                <h4 class="fs-1">{{allstudents}}</h4>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <i class="fa-solid fa-users-rectangle mt-4" style="color: #6b0b0f; font-size: 45px;"></i>
+                <h2 class="mt-3 fs-5">Study Materials</h2>
+                <h4 class="fs-1">{{allusm}}</h4>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <i class="fa-solid fa-users-rectangle mt-4" style="color: #6b0b0f; font-size: 45px;"></i>
+                <h2 class="mt-3 fs-5">Lectures Uploaded</h2>
+                <h4 class="fs-1">{{alllecture}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4 m-4">
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <i class="fa-solid fa-users-rectangle mt-4" style="color: #6b0b0f; font-size: 45px;"></i>
+                <h2 class="mt-3 fs-5">Assignments uploaded</h2>
+                <h4 class="fs-1">{{allassi}}</h4>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <i class="fa-solid fa-users-rectangle mt-4" style="color: #6b0b0f; font-size: 45px;"></i>
+                <h2 class="mt-3 fs-5">No. of feedback</h2>
+                <h4 class="fs-1">{{allfeed}}</h4>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card shadow">
+                <i class="fa-solid fa-users-rectangle mt-4" style="color: #6b0b0f; font-size: 45px;"></i>
+                <h2 class="mt-3 fs-5">No.of complains</h2>
+                <h4 class="fs-1">{{allcomp}}</h4>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
